@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoBlaze Essential Test Suite">
+  
+  <!-- Core Functionality Tests -->
+  <test name="Core Functionality Tests" preserve-order="true">
+    <classes>
+      <class name="com.demoblaze.tests.SignUpTest"/>
+      <class name="com.demoblaze.tests.LoginTest"/>
+      <class name="com.demoblaze.tests.CartTest"/>
+      <class name="com.demoblaze.tests.PurchaseTest"/>
+    </classes>
+  </test>
+  
+  <!-- Navigation and UI Tests -->
+  <test name="Navigation and UI Tests" preserve-order="true">
+    <classes>
+      <class name="com.demoblaze.tests.NavigationTest"/>
+      <class name="com.demoblaze.tests.ProductTest"/>
+    </classes>
+  </test>
+  
+  <!-- User Management Tests -->
+  <test name="User Management Tests" preserve-order="true">
+    <classes>
+      <class name="com.demoblaze.tests.UserManagementTest"/>
+    </classes>
+  </test>
+  
+  <!-- Negative Testing -->
+  <test name="Negative Testing" preserve-order="true">
+    <classes>
+      <class name="com.demoblaze.tests.NegativeTest"/>
+    </classes>
+  </test>
+  
+  
+  <!-- Essential Test Suite (All Essential Tests) -->
+  <test name="Essential Test Suite" preserve-order="true">
+    <classes>
+      <class name="com.demoblaze.tests.SignUpTest"/>
+      <class name="com.demoblaze.tests.LoginTest"/>
+      <class name="com.demoblaze.tests.NavigationTest"/>
+      <class name="com.demoblaze.tests.ProductTest"/>
+      <class name="com.demoblaze.tests.CartTest"/>
+      <class name="com.demoblaze.tests.PurchaseTest"/>
+      <class name="com.demoblaze.tests.UserManagementTest"/>
+      <class name="com.demoblaze.tests.NegativeTest"/>
+    </classes>
+  </test>
+  
+</suite>

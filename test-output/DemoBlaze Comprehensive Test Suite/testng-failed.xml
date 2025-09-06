@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoBlaze Comprehensive Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Core Functionality Tests(failed)">
+    <classes>
+      <class name="com.demoblaze.tests.LoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.LoginTest -->
+    </classes>
+  </test> <!-- Core Functionality Tests(failed) -->
+  <test thread-count="5" name="Navigation and UI Tests(failed)">
+    <classes>
+      <class name="com.demoblaze.tests.ProductTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testProductDetailsDisplay"/>
+          <include name="ensureUserLoggedIn"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.ProductTest -->
+      <class name="com.demoblaze.tests.NavigationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testProductPageNavigation"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.NavigationTest -->
+    </classes>
+  </test> <!-- Navigation and UI Tests(failed) -->
+  <test thread-count="5" name="Negative Testing(failed)">
+    <classes>
+      <class name="com.demoblaze.tests.NegativeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testPurchaseWithInvalidPaymentDetails"/>
+          <include name="testPurchaseWithEmptyPaymentForm"/>
+          <include name="testRegistrationWithExistingUsername"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.NegativeTest -->
+    </classes>
+  </test> <!-- Negative Testing(failed) -->
+  <test thread-count="5" name="Performance Testing(failed)">
+    <classes>
+      <class name="com.demoblaze.tests.PerformanceTest">
+        <methods>
+          <include name="testConcurrentOperations"/>
+          <include name="testProductPageLoadTime"/>
+          <include name="tearDown"/>
+          <include name="testCartPageLoadTime"/>
+          <include name="testModalOpenTime"/>
+          <include name="testAddToCartPerformance"/>
+          <include name="testNavigationPerformance"/>
+          <include name="ensureUserLoggedIn"/>
+          <include name="testMemoryUsage"/>
+          <include name="setUp"/>
+          <include name="testPageLoadTime"/>
+          <include name="testUserLoginPerformance"/>
+          <include name="testUserRegistrationPerformance"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.PerformanceTest -->
+    </classes>
+  </test> <!-- Performance Testing(failed) -->
+  <test thread-count="5" name="API Testing(failed)">
+    <classes>
+      <class name="com.demoblaze.tests.ApiTest">
+        <methods>
+          <include name="testUserLoginApi"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testUserRegistrationApi"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.ApiTest -->
+    </classes>
+  </test> <!-- API Testing(failed) -->
+  <test thread-count="5" name="Complete Test Suite(failed)">
+    <classes>
+      <class name="com.demoblaze.tests.ProductTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testProductDetailsDisplay"/>
+          <include name="ensureUserLoggedIn"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.ProductTest -->
+      <class name="com.demoblaze.tests.PerformanceTest">
+        <methods>
+          <include name="testConcurrentOperations"/>
+          <include name="testProductPageLoadTime"/>
+          <include name="tearDown"/>
+          <include name="testCartPageLoadTime"/>
+          <include name="testModalOpenTime"/>
+          <include name="testAddToCartPerformance"/>
+          <include name="ensureUserLoggedIn"/>
+          <include name="testNavigationPerformance"/>
+          <include name="testMemoryUsage"/>
+          <include name="testPageLoadTime"/>
+          <include name="testUserLoginPerformance"/>
+          <include name="setUp"/>
+          <include name="testUserRegistrationPerformance"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.PerformanceTest -->
+      <class name="com.demoblaze.tests.NavigationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testProductPageNavigation"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.NavigationTest -->
+      <class name="com.demoblaze.tests.NegativeTest">
+        <methods>
+          <include name="testPurchaseWithInvalidPaymentDetails"/>
+          <include name="tearDown"/>
+          <include name="testLoginWithEmptyCredentials"/>
+          <include name="testLoginWithInvalidUsername"/>
+          <include name="testPurchaseWithoutLogin"/>
+          <include name="testRegistrationWithEmptyFields"/>
+          <include name="testPurchaseWithEmptyPaymentForm"/>
+          <include name="testRegistrationWithShortPassword"/>
+          <include name="testRegistrationWithExistingUsername"/>
+          <include name="testCartAccessWithoutLogin"/>
+          <include name="setUp"/>
+          <include name="testLoginWithInvalidPassword"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.NegativeTest -->
+      <class name="com.demoblaze.tests.UserManagementTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testUserProfileInformationDisplay"/>
+          <include name="testUserSessionPersistence"/>
+          <include name="setUp"/>
+          <include name="testUserPurchaseCapability"/>
+          <include name="testUserRegistrationWithUniqueUsername"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.UserManagementTest -->
+      <class name="com.demoblaze.tests.LoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.LoginTest -->
+      <class name="com.demoblaze.tests.ApiTest">
+        <methods>
+          <include name="testUserLoginApi"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testUserRegistrationApi"/>
+        </methods>
+      </class> <!-- com.demoblaze.tests.ApiTest -->
+    </classes>
+  </test> <!-- Complete Test Suite(failed) -->
+</suite> <!-- Failed suite [DemoBlaze Comprehensive Test Suite] -->

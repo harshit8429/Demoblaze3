@@ -1,0 +1,10 @@
+com\demoblaze\tests\PerformanceTest.class
+com\demoblaze\tests\PurchaseTest.class
+com\demoblaze\tests\NegativeTest.class
+com\demoblaze\tests\NavigationTest.class
+com\demoblaze\tests\UserManagementTest.class
+com\demoblaze\tests\LoginTest.class
+com\demoblaze\tests\SignUpTest.class
+com\demoblaze\tests\ApiTest.class
+com\demoblaze\tests\CartTest.class
+com\demoblaze\tests\ProductTest.class
