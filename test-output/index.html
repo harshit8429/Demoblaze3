@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-DemoBlaze_Essential_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">DemoBlaze Essential Test Suite</span>
+              <span class="suite-name border-passed">DemoBlaze Essential Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">28 methods, 2 failed,   26 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-DemoBlaze_Essential_Test_Suite" class="hide-methods failed suite-DemoBlaze_Essential_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-DemoBlaze_Essential_Test_Suite -->
-                      <a href="#" panel-name="suite-DemoBlaze_Essential_Test_Suite" class="show-methods failed suite-DemoBlaze_Essential_Test_Suite"> (show)</a> <!-- show-methods failed suite-DemoBlaze_Essential_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-DemoBlaze_Essential_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DemoBlaze_Essential_Test_Suite" title="com.demoblaze.tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DemoBlaze_Essential_Test_Suite" title="com.demoblaze.tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-DemoBlaze_Essential_Test_Suite -->
+                    <span class="method-stats">26 methods,   26 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -262,42 +243,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-DemoBlaze_Essential_Test_Suite" class="panel DemoBlaze_Essential_Test_Suite">
-          <div class="suite-DemoBlaze_Essential_Test_Suite-class-failed">
+          <div class="suite-DemoBlaze_Essential_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.demoblaze.tests.LoginTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.demoblaze.tests.PurchaseTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
-                  <div class="stack-trace">java.lang.AssertionError: User not logged in! expected [true] but found [false]
-	at com.demoblaze.tests.LoginTest.testValidLogin(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testPurchaseProduct">
+                  </a> <!-- testPurchaseProduct -->
+                  <span class="method-name">testPurchaseProduct</span>
                   <em>
-(TC_LOGIN_001: Verify user login with valid credentials - Essential login functionality test)                  </em>
+(TC_PURCHASE_001: Verify complete purchase flow - Essential purchase functionality test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
-                  <div class="stack-trace">java.lang.AssertionError: User not logged in! expected [true] but found [false]
-	at com.demoblaze.tests.LoginTest.testValidLogin(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testPurchaseProduct">
+                  </a> <!-- testPurchaseProduct -->
+                  <span class="method-name">testPurchaseProduct</span>
                   <em>
-(TC_LOGIN_001: Verify user login with valid credentials - Essential login functionality test)                  </em>
+(TC_PURCHASE_001: Verify complete purchase flow - Essential purchase functionality test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DemoBlaze_Essential_Test_Suite-class-failed -->
+          </div> <!-- suite-DemoBlaze_Essential_Test_Suite-class-passed -->
           <div class="suite-DemoBlaze_Essential_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -345,113 +316,25 @@
           <div class="suite-DemoBlaze_Essential_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.demoblaze.tests.PurchaseTest</span>
+              <span class="class-name">com.demoblaze.tests.NegativeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testPurchaseProduct">
-                  </a> <!-- testPurchaseProduct -->
-                  <span class="method-name">testPurchaseProduct</span>
+                  <a name="testLoginWithInvalidUsername">
+                  </a> <!-- testLoginWithInvalidUsername -->
+                  <span class="method-name">testLoginWithInvalidUsername</span>
                   <em>
-(TC_PURCHASE_001: Verify complete purchase flow - Essential purchase functionality test)                  </em>
+(TC_NEG_001: Verify login with invalid username - Essential negative login test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testPurchaseProduct">
-                  </a> <!-- testPurchaseProduct -->
-                  <span class="method-name">testPurchaseProduct</span>
+                  <a name="testLoginWithInvalidUsername">
+                  </a> <!-- testLoginWithInvalidUsername -->
+                  <span class="method-name">testLoginWithInvalidUsername</span>
                   <em>
-(TC_PURCHASE_001: Verify complete purchase flow - Essential purchase functionality test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DemoBlaze_Essential_Test_Suite-class-passed -->
-          <div class="suite-DemoBlaze_Essential_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.demoblaze.tests.NavigationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCategoryNavigation">
-                  </a> <!-- testCategoryNavigation -->
-                  <span class="method-name">testCategoryNavigation</span>
-                  <em>
-(TC_NAV_002: Verify category navigation - Essential category navigation test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCategoryNavigation">
-                  </a> <!-- testCategoryNavigation -->
-                  <span class="method-name">testCategoryNavigation</span>
-                  <em>
-(TC_NAV_002: Verify category navigation - Essential category navigation test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testHomePageNavigation">
-                  </a> <!-- testHomePageNavigation -->
-                  <span class="method-name">testHomePageNavigation</span>
-                  <em>
-(TC_NAV_001: Verify home page navigation - Essential home page navigation test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testHomePageNavigation">
-                  </a> <!-- testHomePageNavigation -->
-                  <span class="method-name">testHomePageNavigation</span>
-                  <em>
-(TC_NAV_001: Verify home page navigation - Essential home page navigation test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DemoBlaze_Essential_Test_Suite-class-passed -->
-          <div class="suite-DemoBlaze_Essential_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.demoblaze.tests.UserManagementTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUserLogout">
-                  </a> <!-- testUserLogout -->
-                  <span class="method-name">testUserLogout</span>
-                  <em>
-(TC_USER_002: Verify user logout functionality - Essential user logout test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUserLogout">
-                  </a> <!-- testUserLogout -->
-                  <span class="method-name">testUserLogout</span>
-                  <em>
-(TC_USER_002: Verify user logout functionality - Essential user logout test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUserRegistrationWithUniqueUsername">
-                  </a> <!-- testUserRegistrationWithUniqueUsername -->
-                  <span class="method-name">testUserRegistrationWithUniqueUsername</span>
-                  <em>
-(TC_USER_001: Verify user registration with unique username - Essential user registration test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUserRegistrationWithUniqueUsername">
-                  </a> <!-- testUserRegistrationWithUniqueUsername -->
-                  <span class="method-name">testUserRegistrationWithUniqueUsername</span>
-                  <em>
-(TC_USER_001: Verify user registration with unique username - Essential user registration test)                  </em>
+(TC_NEG_001: Verify login with invalid username - Essential negative login test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -503,25 +386,87 @@
           <div class="suite-DemoBlaze_Essential_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.demoblaze.tests.NegativeTest</span>
+              <span class="class-name">com.demoblaze.tests.UserManagementTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLoginWithInvalidUsername">
-                  </a> <!-- testLoginWithInvalidUsername -->
-                  <span class="method-name">testLoginWithInvalidUsername</span>
+                  <a name="testUserLogout">
+                  </a> <!-- testUserLogout -->
+                  <span class="method-name">testUserLogout</span>
                   <em>
-(TC_NEG_001: Verify login with invalid username - Essential negative login test)                  </em>
+(TC_USER_002: Verify user logout functionality - Essential user logout test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testLoginWithInvalidUsername">
-                  </a> <!-- testLoginWithInvalidUsername -->
-                  <span class="method-name">testLoginWithInvalidUsername</span>
+                  <a name="testUserLogout">
+                  </a> <!-- testUserLogout -->
+                  <span class="method-name">testUserLogout</span>
                   <em>
-(TC_NEG_001: Verify login with invalid username - Essential negative login test)                  </em>
+(TC_USER_002: Verify user logout functionality - Essential user logout test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserRegistrationWithUniqueUsername">
+                  </a> <!-- testUserRegistrationWithUniqueUsername -->
+                  <span class="method-name">testUserRegistrationWithUniqueUsername</span>
+                  <em>
+(TC_USER_001: Verify user registration with unique username - Essential user registration test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserRegistrationWithUniqueUsername">
+                  </a> <!-- testUserRegistrationWithUniqueUsername -->
+                  <span class="method-name">testUserRegistrationWithUniqueUsername</span>
+                  <em>
+(TC_USER_001: Verify user registration with unique username - Essential user registration test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoBlaze_Essential_Test_Suite-class-passed -->
+          <div class="suite-DemoBlaze_Essential_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demoblaze.tests.NavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCategoryNavigation">
+                  </a> <!-- testCategoryNavigation -->
+                  <span class="method-name">testCategoryNavigation</span>
+                  <em>
+(TC_NAV_002: Verify category navigation - Essential category navigation test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCategoryNavigation">
+                  </a> <!-- testCategoryNavigation -->
+                  <span class="method-name">testCategoryNavigation</span>
+                  <em>
+(TC_NAV_002: Verify category navigation - Essential category navigation test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageNavigation">
+                  </a> <!-- testHomePageNavigation -->
+                  <span class="method-name">testHomePageNavigation</span>
+                  <em>
+(TC_NAV_001: Verify home page navigation - Essential home page navigation test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageNavigation">
+                  </a> <!-- testHomePageNavigation -->
+                  <span class="method-name">testHomePageNavigation</span>
+                  <em>
+(TC_NAV_001: Verify home page navigation - Essential home page navigation test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -682,10 +627,6 @@
                 <span class="method-in-group-name">testLoginWithCreatedUser</span>
                 <br/>
               </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testValidLogin</span>
-                <br/>
-              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">signup</span>
@@ -715,119 +656,111 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(28);
+data.addRows(26);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testLoginWithInvalidUsername')
 data.setCell(0, 2, 'com.demoblaze.tests.NegativeTest')
-data.setCell(0, 3, 32730);
+data.setCell(0, 3, 32826);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testUserLogout')
-data.setCell(1, 2, 'com.demoblaze.tests.UserManagementTest')
-data.setCell(1, 3, 29545);
+data.setCell(1, 1, 'testLoginWithInvalidUsername')
+data.setCell(1, 2, 'com.demoblaze.tests.NegativeTest')
+data.setCell(1, 3, 32800);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testUserLogout')
 data.setCell(2, 2, 'com.demoblaze.tests.UserManagementTest')
-data.setCell(2, 3, 29250);
+data.setCell(2, 3, 29319);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testLoginWithInvalidUsername')
-data.setCell(3, 2, 'com.demoblaze.tests.NegativeTest')
-data.setCell(3, 3, 25982);
+data.setCell(3, 1, 'testUserLogout')
+data.setCell(3, 2, 'com.demoblaze.tests.UserManagementTest')
+data.setCell(3, 3, 29138);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testDeleteFromCart')
 data.setCell(4, 2, 'com.demoblaze.tests.CartTest')
-data.setCell(4, 3, 25754);
+data.setCell(4, 3, 25879);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testUserRegistrationWithUniqueUsername')
 data.setCell(5, 2, 'com.demoblaze.tests.UserManagementTest')
-data.setCell(5, 3, 8017);
+data.setCell(5, 3, 8476);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testUserRegistrationWithUniqueUsername')
 data.setCell(6, 2, 'com.demoblaze.tests.UserManagementTest')
-data.setCell(6, 3, 7941);
+data.setCell(6, 3, 8310);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testValidLogin')
+data.setCell(7, 1, 'testLoginWithCreatedUser')
 data.setCell(7, 2, 'com.demoblaze.tests.LoginTest')
-data.setCell(7, 3, 6957);
+data.setCell(7, 3, 7799);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testValidLogin')
-data.setCell(8, 2, 'com.demoblaze.tests.LoginTest')
-data.setCell(8, 3, 6875);
+data.setCell(8, 1, 'testLoginAfterRegistration')
+data.setCell(8, 2, 'com.demoblaze.tests.SignUpTest')
+data.setCell(8, 3, 7023);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testLoginAfterRegistration')
-data.setCell(9, 2, 'com.demoblaze.tests.SignUpTest')
-data.setCell(9, 3, 6508);
+data.setCell(9, 1, 'testLoginWithCreatedUser')
+data.setCell(9, 2, 'com.demoblaze.tests.LoginTest')
+data.setCell(9, 3, 6490);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'testLoginAfterRegistration')
 data.setCell(10, 2, 'com.demoblaze.tests.SignUpTest')
-data.setCell(10, 3, 6430);
+data.setCell(10, 3, 6475);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testLoginWithCreatedUser')
-data.setCell(11, 2, 'com.demoblaze.tests.LoginTest')
-data.setCell(11, 3, 6345);
+data.setCell(11, 1, 'testAddToCartFromProductPage')
+data.setCell(11, 2, 'com.demoblaze.tests.ProductTest')
+data.setCell(11, 3, 6128);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testLoginWithCreatedUser')
-data.setCell(12, 2, 'com.demoblaze.tests.LoginTest')
-data.setCell(12, 3, 6296);
+data.setCell(12, 1, 'testPurchaseProduct')
+data.setCell(12, 2, 'com.demoblaze.tests.PurchaseTest')
+data.setCell(12, 3, 6046);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'testAddToCartFromProductPage')
 data.setCell(13, 2, 'com.demoblaze.tests.ProductTest')
-data.setCell(13, 3, 5846);
+data.setCell(13, 3, 5857);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testAddToCartFromProductPage')
-data.setCell(14, 2, 'com.demoblaze.tests.ProductTest')
-data.setCell(14, 3, 5735);
+data.setCell(14, 1, 'testPurchaseProduct')
+data.setCell(14, 2, 'com.demoblaze.tests.PurchaseTest')
+data.setCell(14, 3, 5591);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testPurchaseProduct')
-data.setCell(15, 2, 'com.demoblaze.tests.PurchaseTest')
-data.setCell(15, 3, 5591);
+data.setCell(15, 1, 'testDeleteFromCart')
+data.setCell(15, 2, 'com.demoblaze.tests.CartTest')
+data.setCell(15, 3, 5518);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testDeleteFromCart')
+data.setCell(16, 1, 'testAddToCart')
 data.setCell(16, 2, 'com.demoblaze.tests.CartTest')
-data.setCell(16, 3, 5529);
+data.setCell(16, 3, 5183);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testPurchaseProduct')
-data.setCell(17, 2, 'com.demoblaze.tests.PurchaseTest')
-data.setCell(17, 3, 5306);
+data.setCell(17, 1, 'testAddToCart')
+data.setCell(17, 2, 'com.demoblaze.tests.CartTest')
+data.setCell(17, 3, 4670);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testAddToCart')
-data.setCell(18, 2, 'com.demoblaze.tests.CartTest')
-data.setCell(18, 3, 4795);
+data.setCell(18, 1, 'testValidUserRegistration')
+data.setCell(18, 2, 'com.demoblaze.tests.SignUpTest')
+data.setCell(18, 3, 2399);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testAddToCart')
-data.setCell(19, 2, 'com.demoblaze.tests.CartTest')
-data.setCell(19, 3, 4706);
+data.setCell(19, 1, 'testValidUserRegistration')
+data.setCell(19, 2, 'com.demoblaze.tests.SignUpTest')
+data.setCell(19, 3, 2231);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'testValidUserRegistration')
-data.setCell(20, 2, 'com.demoblaze.tests.SignUpTest')
-data.setCell(20, 3, 2901);
+data.setCell(20, 1, 'testCategoryNavigation')
+data.setCell(20, 2, 'com.demoblaze.tests.NavigationTest')
+data.setCell(20, 3, 1926);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testValidUserRegistration')
-data.setCell(21, 2, 'com.demoblaze.tests.SignUpTest')
-data.setCell(21, 3, 2282);
+data.setCell(21, 1, 'testCategoryNavigation')
+data.setCell(21, 2, 'com.demoblaze.tests.NavigationTest')
+data.setCell(21, 3, 1204);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testCategoryNavigation')
-data.setCell(22, 2, 'com.demoblaze.tests.NavigationTest')
-data.setCell(22, 3, 1154);
+data.setCell(22, 1, 'testProductCategoriesContent')
+data.setCell(22, 2, 'com.demoblaze.tests.ProductTest')
+data.setCell(22, 3, 735);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testCategoryNavigation')
-data.setCell(23, 2, 'com.demoblaze.tests.NavigationTest')
-data.setCell(23, 3, 1138);
+data.setCell(23, 1, 'testProductCategoriesContent')
+data.setCell(23, 2, 'com.demoblaze.tests.ProductTest')
+data.setCell(23, 3, 728);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'testProductCategoriesContent')
-data.setCell(24, 2, 'com.demoblaze.tests.ProductTest')
-data.setCell(24, 3, 755);
+data.setCell(24, 1, 'testHomePageNavigation')
+data.setCell(24, 2, 'com.demoblaze.tests.NavigationTest')
+data.setCell(24, 3, 520);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'testProductCategoriesContent')
-data.setCell(25, 2, 'com.demoblaze.tests.ProductTest')
-data.setCell(25, 3, 749);
-data.setCell(26, 0, 26)
-data.setCell(26, 1, 'testHomePageNavigation')
-data.setCell(26, 2, 'com.demoblaze.tests.NavigationTest')
-data.setCell(26, 3, 516);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'testHomePageNavigation')
-data.setCell(27, 2, 'com.demoblaze.tests.NavigationTest')
-data.setCell(27, 3, 461);
+data.setCell(25, 1, 'testHomePageNavigation')
+data.setCell(25, 2, 'com.demoblaze.tests.NavigationTest')
+data.setCell(25, 3, 472);
 window.suiteTableData['DemoBlaze_Essential_Test_Suite']= { tableData: data, tableDiv: 'times-div-DemoBlaze_Essential_Test_Suite'}
 return data;
 }
@@ -865,448 +798,420 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">25 ms</span>
+                <span class="method-start">20 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidUserRegistration</span>
-                <span class="method-start">3651 ms</span>
+                <span class="method-start">4038 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6568 ms</span>
+                <span class="method-start">6446 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">6741 ms</span>
+                <span class="method-start">6616 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginAfterRegistration</span>
-                <span class="method-start">9112 ms</span>
+                <span class="method-start">8720 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15621 ms</span>
+                <span class="method-start">15196 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">15751 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">17700 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24882 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(null)</span>
-                <span class="method-start">25002 ms</span>
+                <span class="method-start">15337 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithCreatedUser</span>
-                <span class="method-start">27420 ms</span>
+                <span class="method-start">17063 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33766 ms</span>
+                <span class="method-start">23554 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">33879 ms</span>
+                <span class="method-start">23719 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">35942 ms</span>
+                <span class="method-start">25608 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddToCart</span>
-                <span class="method-start">65160 ms</span>
+                <span class="method-start">54844 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">69956 ms</span>
+                <span class="method-start">60028 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">70089 ms</span>
+                <span class="method-start">60184 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">72307 ms</span>
+                <span class="method-start">62244 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDeleteFromCart</span>
-                <span class="method-start">101032 ms</span>
+                <span class="method-start">91166 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">126786 ms</span>
+                <span class="method-start">117046 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.PurchaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">126939 ms</span>
+                <span class="method-start">117194 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">129064 ms</span>
+                <span class="method-start">119273 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPurchaseProduct</span>
-                <span class="method-start">145779 ms</span>
+                <span class="method-start">136191 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">151372 ms</span>
+                <span class="method-start">142238 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.NavigationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">151765 ms</span>
+                <span class="method-start">142667 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCategoryNavigation</span>
-                <span class="method-start">154041 ms</span>
+                <span class="method-start">145103 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">155196 ms</span>
+                <span class="method-start">147030 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">155306 ms</span>
+                <span class="method-start">147158 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testHomePageNavigation</span>
-                <span class="method-start">157399 ms</span>
+                <span class="method-start">149206 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">157915 ms</span>
+                <span class="method-start">149727 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">158025 ms</span>
+                <span class="method-start">149857 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">160124 ms</span>
+                <span class="method-start">151750 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddToCartFromProductPage</span>
-                <span class="method-start">189217 ms</span>
+                <span class="method-start">180906 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">194953 ms</span>
+                <span class="method-start">187034 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">195079 ms</span>
+                <span class="method-start">187191 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">197245 ms</span>
+                <span class="method-start">189085 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testProductCategoriesContent</span>
-                <span class="method-start">226385 ms</span>
+                <span class="method-start">218275 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">227142 ms</span>
+                <span class="method-start">219011 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.UserManagementTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">227305 ms</span>
+                <span class="method-start">219191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">221601 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUserLogout</span>
-                <span class="method-start">229580 ms</span>
+                <span class="method-start">221601 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">229580 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">259126 ms</span>
+                <span class="method-start">250739 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">279567 ms</span>
+                <span class="method-start">271203 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">271887 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUserRegistrationWithUniqueUsername</span>
-                <span class="method-start">280363 ms</span>
+                <span class="method-start">271888 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">280363 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">288305 ms</span>
+                <span class="method-start">280366 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.NegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">288506 ms</span>
+                <span class="method-start">280491 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidUsername</span>
-                <span class="method-start">288622 ms</span>
+                <span class="method-start">280543 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">314605 ms</span>
+                <span class="method-start">313369 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">314805 ms</span>
+                <span class="method-start">313632 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">314805 ms</span>
+                <span class="method-start">313634 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidUserRegistration</span>
-                <span class="method-start">317224 ms</span>
+                <span class="method-start">316117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">319507 ms</span>
+                <span class="method-start">318348 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">319673 ms</span>
+                <span class="method-start">318485 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginAfterRegistration</span>
-                <span class="method-start">321710 ms</span>
+                <span class="method-start">320513 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">328142 ms</span>
+                <span class="method-start">327537 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">328266 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">330344 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">337420 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(null)</span>
-                <span class="method-start">337537 ms</span>
+                <span class="method-start">327676 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithCreatedUser</span>
-                <span class="method-start">339824 ms</span>
+                <span class="method-start">329547 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">346120 ms</span>
+                <span class="method-start">337347 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.NavigationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">346243 ms</span>
+                <span class="method-start">337515 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCategoryNavigation</span>
-                <span class="method-start">348615 ms</span>
+                <span class="method-start">339690 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">349754 ms</span>
+                <span class="method-start">340895 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">349860 ms</span>
+                <span class="method-start">341057 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testHomePageNavigation</span>
-                <span class="method-start">352132 ms</span>
+                <span class="method-start">343236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">352594 ms</span>
+                <span class="method-start">343708 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">352701 ms</span>
+                <span class="method-start">343847 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">354642 ms</span>
+                <span class="method-start">345954 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddToCartFromProductPage</span>
-                <span class="method-start">383505 ms</span>
+                <span class="method-start">375239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">389351 ms</span>
+                <span class="method-start">381097 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">389499 ms</span>
+                <span class="method-start">381253 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">391807 ms</span>
+                <span class="method-start">383570 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testProductCategoriesContent</span>
-                <span class="method-start">420680 ms</span>
+                <span class="method-start">413129 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">421429 ms</span>
+                <span class="method-start">413857 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">421563 ms</span>
+                <span class="method-start">414001 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">423879 ms</span>
+                <span class="method-start">416473 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddToCart</span>
-                <span class="method-start">452833 ms</span>
+                <span class="method-start">445650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">457540 ms</span>
+                <span class="method-start">450320 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">457678 ms</span>
+                <span class="method-start">450497 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">459731 ms</span>
+                <span class="method-start">452721 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDeleteFromCart</span>
-                <span class="method-start">489148 ms</span>
+                <span class="method-start">481915 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">494677 ms</span>
+                <span class="method-start">487435 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.PurchaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">494825 ms</span>
+                <span class="method-start">487593 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">ensureUserLoggedIn</span>
-                <span class="method-start">497138 ms</span>
+                <span class="method-start">489812 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPurchaseProduct</span>
-                <span class="method-start">513801 ms</span>
+                <span class="method-start">506799 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">519108 ms</span>
+                <span class="method-start">512391 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.UserManagementTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">519242 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">521421 ms</span>
+                <span class="method-start">512538 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUserLogout</span>
-                <span class="method-start">521421 ms</span>
+                <span class="method-start">514747 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">514747 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">550672 ms</span>
+                <span class="method-start">544067 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">571339 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">572194 ms</span>
+                <span class="method-start">564729 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUserRegistrationWithUniqueUsername</span>
-                <span class="method-start">572194 ms</span>
+                <span class="method-start">565387 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">565387 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">580212 ms</span>
+                <span class="method-start">573698 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.demoblaze.tests.NegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">580294 ms</span>
+                <span class="method-start">574128 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidUsername</span>
-                <span class="method-start">580353 ms</span>
+                <span class="method-start">574188 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">613084 ms</span>
+                <span class="method-start">606989 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
