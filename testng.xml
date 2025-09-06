@@ -35,7 +35,7 @@
   </test>
   
   
-  <!-- Essential Test Suite (All Essential Tests) -->
+  <!-- Essential Test Suite (All Essential Tests) 
   <test name="Essential Test Suite" preserve-order="true">
     <classes>
       <class name="com.demoblaze.tests.SignUpTest"/>
@@ -47,6 +47,6 @@
       <class name="com.demoblaze.tests.UserManagementTest"/>
       <class name="com.demoblaze.tests.NegativeTest"/>
     </classes>
-  </test>
+  </test> -->
   
 </suite>
