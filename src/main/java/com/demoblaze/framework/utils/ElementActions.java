@@ -20,6 +20,7 @@ public final class ElementActions {
     public static String text(By locator) {
         return Waits.visible(locator).getText().trim();
     }
+    
 
     public static boolean isDisplayed(By locator) {
         try {

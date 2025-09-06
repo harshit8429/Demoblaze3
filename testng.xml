@@ -17,6 +17,7 @@
     <classes>
       <class name="com.demoblaze.tests.NavigationTest"/>
       <class name="com.demoblaze.tests.ProductTest"/>
+     <!---->  <class name="com.demoblaze.tests.NavbarTest"/>
     </classes>
   </test>
   
@@ -42,6 +43,7 @@
       <class name="com.demoblaze.tests.LoginTest"/>
       <class name="com.demoblaze.tests.NavigationTest"/>
       <class name="com.demoblaze.tests.ProductTest"/>
+      <class name="com.demoblaze.tests.NavbarTest"/>
       <class name="com.demoblaze.tests.CartTest"/>
       <class name="com.demoblaze.tests.PurchaseTest"/>
       <class name="com.demoblaze.tests.UserManagementTest"/>
